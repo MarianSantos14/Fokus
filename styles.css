@@ -3,20 +3,27 @@
     --color-secondary: #FFF;
     --azul-royal: #144480;
     --fundo-card-timer: rgba(20, 68, 128, 0.30);
-    --lils: #B872FF;
-    --linear-botes: linear-gradient(180deg, #B872FF 0%, #144480 100%);
 }
 
 [data-contexto="foco"] {
     --main-bg-color: linear-gradient(180deg, #8B1FF8 0%, #041832 48.44%, #01080E 100%);
+    --lils: #B872FF;
+    --linear-botes: linear-gradient(180deg, #B872FF 0%, #144480 100%);
+    --color-btn: #b872ffab;
 }
 
 [data-contexto="descanso-curto"] {
     --main-bg-color: linear-gradient(180deg, #0F725C 0%, #041832 48.44%, #01080E 100%);
+    --lils: #199379;
+    --linear-botes: linear-gradient(180deg, #0F725C 0%, #144480 100%);
+    --color-btn: #14803c8f;
 }
 
 [data-contexto="descanso-longo"] {
     --main-bg-color: linear-gradient(180deg, #1875E9 0%, #041832 48.44%, #01080E 100%);
+    --lils: #257eeb;
+    --linear-botes: linear-gradient(180deg, #1875E9 0%, #144480 100%);
+    --color-btn: #146080;
 }
 
 * {
@@ -111,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__card-button.active {
     border-radius: 0.8rem;
-    background: var(--azul-royal);
+    background: var(--color-btn);
     font-weight: 600;
 }
 
@@ -148,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     cursor: pointer;
     outline: inherit;
-    border-radius: 3.2rem;
+    border-radius: 3.2rem; 
     background: var(--linear-botes);
     margin-top: 3.2rem;
     font-size: 1.8rem;
